@@ -4,9 +4,6 @@
         "es6": true,
         "node": true
     },
-    "extends": [
-        "google"
-    ],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -14,11 +11,11 @@
     "parserOptions": {
         "ecmaVersion": 2018
     },
+    "extends": ["google", "prettier"],
+    "plugins": ["prettier"],
     "rules": {
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
+        "prettier/prettier": "error",
+        "linebreak-style": 0,
         "new-cap": 0
     }
 }
